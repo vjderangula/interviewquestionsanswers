@@ -17,6 +17,7 @@ public class PrimeNumbersIntegerArray {
 
 	// Method to check if a number is prime
 	public static boolean isPrime(int num) {
-		return num > 1 && IntStream.range(2, (int) Math.sqrt(num) + 1).noneMatch(i -> num % i == 0);
+		return num > 1 && IntStream.range(2, (int) Math.sqrt(num) + 1)
+				.noneMatch(i -> num % i == 0);
 	}
 }

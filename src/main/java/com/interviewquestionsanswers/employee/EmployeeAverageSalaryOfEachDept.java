@@ -1,4 +1,4 @@
-package com.interviewquestionsanswers;
+package com.interviewquestionsanswers.employee;
 
 import java.util.List;
 import java.util.Map;

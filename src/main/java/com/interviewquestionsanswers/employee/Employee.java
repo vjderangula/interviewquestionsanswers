@@ -1,4 +1,4 @@
-package com.interviewquestionsanswers;
+package com.interviewquestionsanswers.employee;
 
 public class Employee {
 	    private int id;

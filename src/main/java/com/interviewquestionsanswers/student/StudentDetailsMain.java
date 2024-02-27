@@ -1,4 +1,4 @@
-package com.interviewquestionsanswers;
+package com.interviewquestionsanswers.student;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

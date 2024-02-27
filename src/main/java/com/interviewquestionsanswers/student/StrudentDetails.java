@@ -1,4 +1,4 @@
-package com.interviewquestionsanswers;
+package com.interviewquestionsanswers.student;
 
 import java.util.Date;
 import java.util.Objects;
