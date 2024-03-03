@@ -19,9 +19,10 @@ public class ThreadsBasics {
 		Task1 task1 = new Task1();
 		task1.start();//task1.run();
 		
-		for (int j = 291; j < 299; j++) 
-			System.out.print(" "+j);
-		System.out.println("\nTask2 Done");
+		Task2 task2 = new Task2();
+		Thread task2Thread = new Thread(task2);
+		
+		task2Thread.start();//task2Thread.run();
 		for (int k = 391; k < 399; k++) 
 			System.out.print(" "+k);
 			
@@ -30,4 +31,14 @@ public class ThreadsBasics {
 	
 	}
 
+}
+class Task2 implements Runnable{
+	
+	@Override
+	public void run() {
+		System.out.println("\nTask2 Started");
+		for (int j = 291; j < 299; j++) 
+			System.out.print(" "+j);
+		System.out.println("\nTask2 Done");
+	}
 }
