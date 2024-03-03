@@ -7,7 +7,11 @@ public class NumbersPrintDuplicates {
 
 	public static void main(String[] args) {
 
-		
+
+/**Write a Java Program 
+ * input=2,5,8,9,4,6,3,2,5,9,7
+ * output= [2, 5, 9]
+ */
 		int[] arrays = {2,5,8,9,4,6,3,2,5,9,7};
 		
 		

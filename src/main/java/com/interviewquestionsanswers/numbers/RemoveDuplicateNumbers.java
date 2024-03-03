@@ -11,6 +11,11 @@ public class RemoveDuplicateNumbers {
 
 	public static void main(String[] args) {
 		
+		
+		/**Write a Java Program to print duplicate numbers
+		 * input=2,5,8,9,4,6,3,2,5,9,7
+		 * output= [2, 5, 9]
+		 */
 		List<Integer> withDuplicates = new ArrayList<Integer>();
 		withDuplicates.add(2);
 		withDuplicates.add(5);
@@ -32,7 +37,10 @@ public class RemoveDuplicateNumbers {
 		
 		System.out.println("==================Streams==================");
 		
-		
+		/**Write a Java 8 Program to print unique numbers
+		 * input=2,5,4,6,9,8,7,2,4,6,3,5,8,9
+		 * output= 2, 5, 4, 6, 9, 8, 7, 3
+		 */
 		List<Integer> withDuplicatesStreams = Arrays.asList(2,5,4,6,9,8,7,2,4,6,3,5,8,9);
 	
 		List<Integer> withoutDuplicatesStreams =  withDuplicatesStreams.stream()
