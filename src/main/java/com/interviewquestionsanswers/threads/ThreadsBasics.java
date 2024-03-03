@@ -14,30 +14,32 @@ class Task1 extends Thread {
 
 public class ThreadsBasics {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		/*
 		 * 
 		 * Task1 Started
 		 * 
 		 * Task2 Started 391 392 393 394 395 396 397 398 191 291 192 Task3 Done Main
-		 * Method 193 292 194 195 196 197 198 293 Task1 Done 294 295 296 297 298 
-		 * Task2 Done 
-		 
-		 * New 
-		 * Runnable 
-		 * Running 
-		 * Blocked/ waiting (Non-runnable state)
-		 * Terminated/ Dead
+		 * Method 193 292 194 195 196 197 198 293 Task1 Done 294 295 296 297 298 Task2
+		 * Done
+		 * 
+		 * New Runnable Running Blocked/ waiting (Non-runnable state) Terminated/ Dead
 		 */
 
 		Task1 task1 = new Task1();
 		task1.start();// task1.run();
-
+		task1.setPriority(10);
 		Task2 task2 = new Task2();
-		Thread task2Thread = new Thread(task2);
-
+		Thread task2Thread = new Thread(task2);		
 		task2Thread.start();// task2Thread.run();
+		task1.join();
+		task2Thread.join();
+		
+		Thread.sleep(1000);
+		Thread.yield();
+		//synchronized
+		System.out.println("\nTask3 Started");
 		for (int k = 391; k < 399; k++)
 			System.out.print(" " + k);
 
