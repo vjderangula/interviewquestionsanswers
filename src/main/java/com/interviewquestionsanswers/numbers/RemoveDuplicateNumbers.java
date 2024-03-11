@@ -28,11 +28,12 @@ public class RemoveDuplicateNumbers {
 		withDuplicates.add(8);
 		withDuplicates.add(15);
 		
-		Set<Integer> withoutduplicates = new LinkedHashSet<Integer>(withDuplicates);
+		Set<Integer> withoutduplicatesSet = new LinkedHashSet<Integer>(withDuplicates);
 		
-		List<Integer> withoutDuplicates = new ArrayList<Integer>(withoutduplicates);
+		//List<Integer> withoutDuplicates = new ArrayList<Integer>(withoutduplicatesSet);
 		
-		System.out.println(withoutDuplicates);
+		System.out.println(withoutduplicatesSet);
+		//System.out.println(withoutDuplicates);
 		
 		
 		System.out.println("==================Streams==================");

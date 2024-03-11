@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class MissingNumbers {
 	public static void main(String[] args) {
-		int[] input = { 1, 4, 2, 5 };
+		int[] input = { 1, 4, 2, 5, 8};
 		int[] missingNumbers = findMissingNumbers(input);
 
 		System.out.println("Missing numbers: " + Arrays.toString(missingNumbers));
