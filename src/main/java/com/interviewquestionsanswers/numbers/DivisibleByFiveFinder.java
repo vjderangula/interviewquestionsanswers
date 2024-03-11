@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class DivisibleByFiveFinder {
     public static void main(String[] args) {
-        int[] array = {8, 9, 5, 10, 20, 1, 5, 25};
+        int[] array = {8, 9, 5, 10, 20, 1, 25};
         
         findNumbersDivisibleByFive(array);
     }
@@ -15,5 +15,6 @@ public class DivisibleByFiveFinder {
               .filter(num -> num % 5 == 0)
               .forEach(System.out::println);
     }
+    
 }
 

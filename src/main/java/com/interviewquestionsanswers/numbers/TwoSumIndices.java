@@ -11,24 +11,20 @@ public class TwoSumIndices {
 	public static void main(String[] args) {
 		int[] nums = { 1, 4, 2, 5 };
 		int target = 9;
-
 		findTwoSumIndices(nums, target);
 	}
-
 	public static void findTwoSumIndices(int[] nums, int target) {
 		Map<Integer, Integer> map = new HashMap<>();
 
-		for (int i = 0; i < nums.length; i++) {
-			int complement = target - nums[i];
+	for (int i = 0; i < nums.length; i++) {
+		int complement = target - nums[i];
 
-			if (map.containsKey(complement)) {
-				System.out.println("Indices: [" + map.get(complement) + ", " + i + "]");
-				return;
-			}
-
+	if (map.containsKey(complement)) {
+		System.out.println("Indices: [" + map.get(complement) + ", " + i + "]");
+		return;
+		}
 			map.put(nums[i], i);
 		}
-
 		System.out.println("No two elements sum up to the target.");
 	}
 }
