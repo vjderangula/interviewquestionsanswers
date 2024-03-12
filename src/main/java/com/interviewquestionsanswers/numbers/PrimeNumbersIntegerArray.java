@@ -10,9 +10,9 @@ public class PrimeNumbersIntegerArray {
 	public static void main(String[] args) {
 		int[] input = { 2, 6, 8, 18, 19, 15, 7, 11 };
 		List<Integer> primeNumbers = Arrays.stream(input).boxed() // Convert int to Integer
-				.filter(PrimeNumbers::isPrime).collect(Collectors.toList());
+				.filter(PrimeNumbersIntegerArray::isPrime).collect(Collectors.toList());
 
-		System.out.println("Prime numbers in the input array: " + primeNumbers);
+		System.out.println("Prime numbers PrimeNumbersIntegerArray in the input array: " + primeNumbers);
 	}
 
 	// Method to check if a number is prime
