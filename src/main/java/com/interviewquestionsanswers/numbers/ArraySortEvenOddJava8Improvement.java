@@ -13,9 +13,9 @@ public class ArraySortEvenOddJava8Improvement {
 	System.out.println("Input ");
 	input.forEach(e -> System.out.printf(e +" "));
 	
-	List<Integer> output =input.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
+	List<Integer> output =input.stream().filter(n -> n % 2 != 0).collect(Collectors.toList());
 	
-	input.stream().filter(n -> n % 2 != 0).collect(Collectors.toCollection(() -> output));
+	input.stream().filter(n -> n % 2 == 0).collect(Collectors.toCollection(() -> output));
 	
 	System.out.println("\noutput ");
 	output.forEach(e -> System.out.printf(e +" "));
