@@ -34,3 +34,9 @@ Arrays.stream(output).forEach(e->System.out.print(e+" "));
 }
 
 }
+/*
+Input :: 
+1 4 8 5 10 16 9 11 20 
+output :: 
+1 5 9 11 20 16 10 8 4 
+*/

@@ -7,8 +7,10 @@ import java.util.List;
 public class ThreeSum {
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
+        System.out.println("input: " );
+        Arrays.stream(nums).forEach(e -> System.out.print(e+" "));    
         List<List<Integer>> result = threeSum(nums);
-        System.out.println("Output: " + result);
+        System.out.println("\nOutput: " + result);
     }
     
     public static List<List<Integer>> threeSum(int[] nums) {
@@ -54,3 +56,8 @@ public class ThreeSum {
     }
 }
 
+/*
+ input: 
+-1 0 1 2 -1 -4 
+Output: [[-1, -1, 2], [-1, 0, 1]]
+ */

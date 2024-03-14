@@ -41,3 +41,9 @@ System.out.print(output[i]+" ");
 }
 
 }
+/*
+Input :: 
+1 4 8 5 10 16 9 11 20 
+output :: 
+1 5 9 11 4 8 10 16 20
+*/
