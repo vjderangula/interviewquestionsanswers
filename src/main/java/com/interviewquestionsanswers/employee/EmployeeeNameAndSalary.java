@@ -8,7 +8,7 @@ public class EmployeeeNameAndSalary {
 	public static void main(String[] args) {
 List<Employee> empList = ListOfEmployeeDataForJava8.getEmployeesData();
 
-List<Employee> empListSalary = empList.stream().filter(e->e.getSalary()>10000).collect(Collectors.toList());
+//List<Employee> empListSalary = empList.stream().filter(e->e.getSalary()>10000).collect(Collectors.toList());
 
 //empListSalary.forEach(System.out::println);
 

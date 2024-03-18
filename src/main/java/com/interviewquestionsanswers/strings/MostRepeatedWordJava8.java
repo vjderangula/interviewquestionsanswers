@@ -1,11 +1,9 @@
 package com.interviewquestionsanswers.strings;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class MostRepeatedWordJava8 {
@@ -19,7 +17,7 @@ public class MostRepeatedWordJava8 {
 		Map<String, Long> map = listOfStrings.stream().collect(Collectors.groupingBy(str -> str,Collectors.counting()));
 		
 		Entry<String, Long> entry = map.entrySet().stream().max(Map.Entry.comparingByValue()).get();
-		System.out.println("Repeated word '"+ entry.getKey()+ "' No Of Times "+entry.getValue());
+		System.out.println("Repeated word '"+ entry.getKey()+ "' Times "+entry.getValue());
 		
 		
 	}

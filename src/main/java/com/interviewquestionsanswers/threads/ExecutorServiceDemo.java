@@ -1,6 +1,5 @@
 package com.interviewquestionsanswers.threads;
 
-import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

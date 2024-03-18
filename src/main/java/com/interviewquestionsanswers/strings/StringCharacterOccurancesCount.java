@@ -1,7 +1,6 @@
 package com.interviewquestionsanswers.strings;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class StringCharacterOccurancesCount {
 
