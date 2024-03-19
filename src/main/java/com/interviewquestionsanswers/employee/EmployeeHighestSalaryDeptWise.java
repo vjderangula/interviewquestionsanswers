@@ -18,7 +18,7 @@ public class EmployeeHighestSalaryDeptWise {
 	.values().stream().map(deptEmp -> deptEmp.stream().max(Comparator.comparing(Employee2::getSalary)).orElse(null))
 	.collect(Collectors.toList());
 		
-		//highestDataDeptWise.forEach(System.out::println);
+		highestDataDeptWise.forEach(System.out::println);
 		
 		Map<String, Employee2> mapHighest = listOfEmployees.stream()
 				.collect(Collectors.groupingBy(e -> e.getDepartment(),

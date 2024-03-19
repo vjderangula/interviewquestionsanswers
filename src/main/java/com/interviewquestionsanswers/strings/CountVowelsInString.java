@@ -1,8 +1,5 @@
 package com.interviewquestionsanswers.strings;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 public class CountVowelsInString {
 	/*
 	  static int isVowel(char chars)
