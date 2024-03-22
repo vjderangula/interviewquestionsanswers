@@ -20,6 +20,7 @@ public class EmployeeHighestSalaryDeptWise {
 		
 		highestDataDeptWise.forEach(System.out::println);
 		
+		// data based on Highest Salary dept name and Dept wise Approach --> 2
 		Map<String, Employee2> mapHighest = listOfEmployees.stream()
 				.collect(Collectors.groupingBy(e -> e.getDepartment(),
 						Collectors.collectingAndThen(Collectors.maxBy(
